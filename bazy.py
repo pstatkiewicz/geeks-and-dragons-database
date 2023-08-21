@@ -182,9 +182,9 @@ class view(FloatLayout):
             try:
 
                 mydb = mysql.connector.connect(
-                    host = "giniewicz.it",
+                    host = "", #
                     user = "team13",
-                    password = "te@mie",
+                    password = "", #
                     port = "3306",
                     database = "team13")
                 
@@ -278,11 +278,11 @@ class view(FloatLayout):
         try:
 
             mydb = mysql.connector.connect(
-                host = "giniewicz.it",
-                user = "team13",
-                password = "te@mie",
-                port = "3306",
-                database = "team13")
+                    host = "", #
+                    user = "team13",
+                    password = "", #
+                    port = "3306",
+                    database = "team13")
                 
             my_cursor = mydb.cursor()
             query_id = f"""SELECT {table}.id, `nazwa gry`, kwota FROM {table}
